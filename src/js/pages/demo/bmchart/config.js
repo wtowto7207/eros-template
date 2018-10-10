@@ -6,7 +6,7 @@ export const cycleChartInfo = {
         left: 'center',
         top: 20,
         textStyle: {
-        color: '#ccc'
+            color: '#ccc'
         }
     },
 
@@ -20,7 +20,7 @@ export const cycleChartInfo = {
         min: 80,
         max: 600,
         inRange: {
-        colorLightness: [0, 1]
+            colorLightness: [0, 1]
         }
     },
     series: [
@@ -41,26 +41,26 @@ export const cycleChartInfo = {
             roseType: 'radius',
             label: {
                 normal: {
-                textStyle: {
-                    color: 'rgba(255, 255, 255, 0.3)'
-                }
+                    textStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    }
                 }
             },
             labelLine: {
                 normal: {
-                lineStyle: {
-                    color: 'rgba(255, 255, 255, 0.3)'
-                },
-                smooth: 0.2,
-                length: 10,
-                length2: 20
+                    lineStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    },
+                    smooth: 0.2,
+                    length: 10,
+                    length2: 20
                 }
             },
             itemStyle: {
                 normal: {
-                color: '#c23531',
-                shadowBlur: 200,
-                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    color: '#c23531',
+                    shadowBlur: 200,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
             },
 
@@ -92,7 +92,7 @@ export const lineChartInfo = {
         left: 'center',
         top: 20,
         textStyle: {
-        color: '#ccc'
+            color: '#ccc'
         }
     },
     tooltip: {
@@ -152,7 +152,7 @@ export const barChartInfo = {
         left: 'center',
         top: 20,
         textStyle: {
-        color: '#ccc'
+            color: '#ccc'
         }
     },
     tooltip: {
@@ -201,15 +201,15 @@ export const radarChartInfo = {
                 backgroundColor: '#999',
                 borderRadius: 3,
                 padding: [3, 5]
-           }
+            }
         },
         indicator: [
-           { name: 'sales', max: 6500 },
-           { name: 'Administration', max: 16000 },
-           { name: 'Information Techology', max: 30000 },
-           { name: 'Customer Support', max: 38000 },
-           { name: 'Development', max: 52000 },
-           { name: 'Marketing', max: 25000 }
+            { name: 'sales', max: 6500 },
+            { name: 'Administration', max: 16000 },
+            { name: 'Information Techology', max: 30000 },
+            { name: 'Customer Support', max: 38000 },
+            { name: 'Development', max: 52000 },
+            { name: 'Marketing', max: 25000 }
         ]
     },
     series: [{
@@ -221,10 +221,37 @@ export const radarChartInfo = {
                 value: [4300, 10000, 28000, 35000, 50000, 19000],
                 name: '预算分配（Allocated Budget）'
             },
-             {
+            {
                 value: [5000, 14000, 28000, 31000, 42000, 21000],
                 name: '实际开销（Actual Spending）'
             }
         ]
     }]
 }
+
+export const heatMap = {
+    animation: false,
+    bmap: {
+        center: [119.653564453125, 30.41142463684082],
+        zoom: 14,
+        roam: true
+    },
+    visualMap: {
+        show: false,
+        top: 'top',
+        min: 0,
+        max: 5,
+        seriesIndex: 0,
+        calculable: true,
+        inRange: {
+            color: ['blue', 'blue', 'green', 'yellow', 'red']
+        }
+    },
+    series: [{
+        type: 'heatmap',
+        coordinateSystem: 'bmap',
+        data: [[119.653564453125, 30.41142463684082,23]],
+        pointSize: 5,
+        blurSize: 6
+        }]
+    }

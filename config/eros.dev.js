@@ -7,6 +7,8 @@ module.exports = {
         'js/config/index.js',
         // mediator
         'js/mediator/index.vue',
+        // test
+        'js/pages/demo/home.vue',
         // home
         'js/pages/demo/index.vue',
         'js/pages/demo/lifecycle/index.vue',
@@ -29,7 +31,36 @@ module.exports = {
         'js/pages/demo/bmcalendar/index.vue',
         'js/pages/demo/other/bindingx.vue',
         'js/pages/demo/other/weexui.vue',
-        'js/pages/demo/other/bui.vue'
+        'js/pages/demo/other/bui.vue',
+        // duo components
+        'js/pages/demo/duoComponents/guide.vue',
+        //plugin
+        'js/pages/demo/plugin/lottie.vue',
+        'js/pages/demo/plugin/router.vue',
+        //nat plugins
+        'js/pages/demo/plugin/nat/index.vue',
+        'js/pages/demo/plugin/nat/communication.vue',
+        'js/pages/demo/plugin/nat/image.vue',
+        'js/pages/demo/plugin/nat/audio.vue',
+        'js/pages/demo/plugin/nat/video.vue',
+        'js/pages/demo/plugin/nat/camera.vue',
+        'js/pages/demo/plugin/nat/recorder.vue',
+        'js/pages/demo/plugin/nat/modal.vue',
+        'js/pages/demo/plugin/nat/stream.vue',
+        'js/pages/demo/plugin/nat/transfer.vue',
+        'js/pages/demo/plugin/nat/geo.vue',
+        'js/pages/demo/plugin/nat/accelerometer.vue',
+        'js/pages/demo/plugin/nat/compass.vue',
+        'js/pages/demo/plugin/nat/info.vue',
+        'js/pages/demo/plugin/nat/network.vue',
+        'js/pages/demo/plugin/nat/vibration.vue',
+        'js/pages/demo/plugin/nat/screen.vue',
+        'js/pages/demo/plugin/nat/volume.vue',
+        'js/pages/demo/plugin/nat/battery.vue',
+        'js/pages/demo/plugin/nat/alipay.vue',
+        'js/pages/demo/plugin/nat/wechat.vue',
+        // gcanvas
+        'js/pages/demo/plugin/gcanvas.vue'
     ],
     'alias': {
         'Components': 'js/components',

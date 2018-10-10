@@ -1,0 +1,146 @@
+<template>
+    <div class="container">
+        <scroller>
+            <wxc-cell v-for="(item,index) in pages" :key="index" :title="item.title"
+                :desc="item.desc"
+                :has-arrow="true"
+                :has-top-border="true"
+                @wxcCellClicked="openPage(item)">
+            </wxc-cell>
+        </scroller>
+    </div>
+</template>
+<style scoped>
+    .container{
+
+    }
+    .button{
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+    }
+</style>
+<script>
+var communication = weex.requireModule('communication');
+import { WxcCell } from "weex-ui";
+export default {
+    data(){
+        return{
+            pages:[
+                {
+                    title:'通讯',
+                    desc:'打电话、发短信、发邮件',
+                    router:'plugin.nat.communication'
+                },
+                {
+                    title:'图片',
+                    desc:'选取图片、图片预览、查看图片信息、查看图片EXIF信息',
+                    router:'plugin.nat.image'
+                },
+                {
+                    title:'音频',
+                    desc:'播放、暂停、停止音频',
+                    router:'plugin.nat.audio'
+                },
+                {
+                    title:'视频',
+                    desc:'播放、暂停、停止视频',
+                    router:'plugin.nat.video'
+                },
+                {
+                    title:'摄像头',
+                    desc:'拍照、录像',
+                    router:'plugin.nat.camera'
+                },
+                {
+                    title:'录音机',
+                    desc:'开始、结束录音',
+                    router:'plugin.nat.recorder'
+                },
+                {
+                    title:'弹窗',
+                    desc:'警示框、对话框、确认框、吐司条',
+                    router:'plugin.nat.modal'
+                },
+                {
+                    title:'网络请求',
+                    desc:'fetch',
+                    router:'plugin.nat.stream'
+                },
+                {
+                    title:'文件传输',
+                    desc:'下载、上传',
+                    router:'plugin.nat.transfer'
+                },
+                {
+                    title:'地理定位',
+                    desc:'获取当前定位、实时监听定位、取消监听定位',
+                    router:'plugin.nat.geo'
+                },
+                {
+                    title:'加速器',
+                    desc:'获取当前加速度、实时监听加速度、取消监听',
+                    router:'plugin.nat.accelerometer'
+                },
+                {
+                    title:'指南针',
+                    desc:'获取当前方位角、实时监听、取消监听',
+                    router:'plugin.nat.compass'
+                },
+                {
+                    title:'设备信息',
+                    desc:'获取设备信息',
+                    router:'plugin.nat.info'
+                },
+                {
+                    title:'网络',
+                    desc:'获取网络状态',
+                    router:'plugin.nat.network'
+                },
+                {
+                    title:'振动',
+                    desc:'设置振动',
+                    router:'plugin.nat.vibration'
+                },
+                {
+                    title:'屏幕',
+                    desc:'获取屏幕信息、获取屏幕亮度、设置亮度',
+                    router:'plugin.nat.screen'
+                },
+                {
+                    title:'音量',
+                    desc:'获取音量、设置音量',
+                    router:'plugin.nat.volume'
+                },
+                {
+                    title:'电池',
+                    desc:'获取电池信息',
+                    router:'plugin.nat.battery'
+                },
+                {
+                    title:'支付宝支付',
+                    desc:'支付宝支付相关',
+                    router:'plugin.nat.alipay'
+                },
+                {
+                    title:'wechat',
+                    desc:'wechat相关',
+                    router:'plugin.nat.wechat'
+                },
+            ]
+        }
+    },
+    components:{
+        WxcCell
+    },
+    methods:{
+        openPage(page){
+            this.$router.open({
+                name:page.router,
+                type:'PRESENT',
+                navTitle:page.title
+            })
+        }
+    }
+}
+</script>

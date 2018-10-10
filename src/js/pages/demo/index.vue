@@ -5,12 +5,12 @@
             <eros-profile></eros-profile>
             <cell class="line"></cell>
             
+            <duo-components></duo-components>
+            <eros-three></eros-three>
             <eros-core></eros-core>
             <eros-native></eros-native>
             <eros-notice></eros-notice>
             <eros-tools></eros-tools>
-            <eros-three></eros-three>
-            
             <eros-expand></eros-expand>
 
             <eros-components></eros-components>
@@ -38,6 +38,7 @@ import ErosProfile from './components/profile'
 import ErosComponents from './components/components'
 import ErosUilib from './components/uilib'
 import ErosAdvanced from './components/advanced'
+import DuoComponents from './components/duoComponents'
 import { buiButton } from 'bui-weex';
 
 export default {
@@ -45,7 +46,7 @@ export default {
         ErosCore, ErosTools, ErosNative, 
         ErosProfile, ErosExpand, ErosNotice, 
         ErosThree, ErosComponents, ErosUilib,
-        ErosAdvanced, buiButton
+        ErosAdvanced, buiButton,DuoComponents
     },
     data () {
         return {

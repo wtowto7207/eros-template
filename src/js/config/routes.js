@@ -5,6 +5,9 @@
 //  dev.json 的 exports 需要打包的js地址，填入src的需要被打包成js bundle的地址   从src开始
 
 export default {
+    'home': {
+        url: '/pages/demo/home.js'
+    },
     'demo': {
         title: 'weex-eros demo',
         url: '/pages/demo/index.js'
@@ -88,5 +91,104 @@ export default {
     'demo.other.bui': {
         title: 'bui',
         url: '/pages/demo/other/bui.js'
+    },
+    'plugin.lottie':{
+        title: 'lottie',
+        url:'/pages/demo/plugin/lottie.js'
+    },
+    'plugin.router':{
+        title:'路由器相关',
+        url:'/pages/demo/plugin/router.js'
+    },
+    'plugin.nat':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/index.js'
+    },
+    'plugin.nat.communication':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/communication.js'
+    },
+    'plugin.nat.image':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/image.js'
+    },
+    'plugin.nat.audio':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/audio.js'
+    },
+    'plugin.nat.video':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/video.js'
+    },
+    'plugin.nat.camera':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/camera.js'
+    },
+    'plugin.nat.recorder':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/recorder.js'
+    },
+    'plugin.nat.modal':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/modal.js'
+    },
+    'plugin.nat.stream':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/stream.js'
+    },
+    'plugin.nat.transfer':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/transfer.js'
+    },
+    'plugin.nat.geo':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/geo.js'
+    },
+    'plugin.nat.accelerometer':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/accelerometer.js'
+    },
+    'plugin.nat.compass':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/compass.js'
+    },
+    'plugin.nat.info':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/info.js'
+    },
+    'plugin.nat.network':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/network.js'
+    },
+    'plugin.nat.vibration':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/vibration.js'
+    },
+    'plugin.nat.screen':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/screen.js'
+    },
+    'plugin.nat.volume':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/volume.js'
+    },
+    'plugin.nat.battery':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/battery.js'
+    },
+    'plugin.nat.alipay':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/alipay.js'
+    },
+    'plugin.nat.wechat':{
+        title:'Nat',
+        url:'/pages/demo/plugin/nat/wechat.js'
+    },
+    'plugin.gcanvas':{
+        title:'Nat',
+        url:'/pages/demo/plugin/gcanvas.js'
+    },
+    'duo.guide':{
+        url: '/pages/demo/duoComponents/guide.js'
     }
 }

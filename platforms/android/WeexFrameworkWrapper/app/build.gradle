@@ -104,4 +104,40 @@ dependencies {
     compile "com.android.support:support-v4:${PROJECT_SUPPORTLIBVERSION}"
     testCompile 'junit:junit:4.12'
     compile project(':wxframework')
+    compile project(':nexus')
+    //    友盟统计
+    compile project(':erospluginum')
+    //Amap
+    compile project(':ErosPluginAmap')
+    //个推
+    compile project(':erosplugingt')
+    //微信支付
+    compile project(':erospluginwxpay')
+    //分享
+    compile project(':erospluginwxshare')
+    //lottie
+    compile project(':weexlottie')
+//    nat 系列
+    compile project(':nataccelerometer')
+    compile project(':natalipay')
+    compile project(':nataudio')
+    compile project(':natbattery')
+    compile project(':natcamera')
+    compile project(':natcommunication')
+    compile project(':natcompass')
+    compile project(':natgeolocation')
+    compile project(':natimage')
+    compile project(':natinfo')
+    compile project(':natmodal')
+    compile project(':natnetwork')
+    compile project(':natrecorder')
+    compile project(':natscreen')
+    compile project(':natstream')
+    compile project(':nattransfer')
+    compile project(':natvibration')
+    compile project(':natvideo')
+    compile project(':natvolume')
+//    compile project(':natwechat')
+//    路由器相关
+    compile project(':router')
 }

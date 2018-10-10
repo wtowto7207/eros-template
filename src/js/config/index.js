@@ -3,6 +3,7 @@ import apis from './apis'
 import routes from './routes'
 import './push'
 
+
 new Widget({
     router: {
         /**

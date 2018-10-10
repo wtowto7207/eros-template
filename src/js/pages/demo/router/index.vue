@@ -175,7 +175,7 @@ export default {
         },
         toWebView () {
             this.$router.toWebView({
-                url: 'bmlocal://assets/test.html?value=123&vaule2=kdkdkkd',
+                url: 'https://www.baidu.com',
                 title: 'WebView标题'
             })
         },
@@ -196,15 +196,6 @@ export default {
         },
         refresh () {
             this.$router.refresh()
-        }
-    },
-    eros :{
-        // 页面周期相关 start 
-        beforeAppear (params, options) {
-            console.log('beforeAppear');
-        },
-        beforeBackAppear (params, options) {
-            console.log('beforeBackAppear');
         }
     }
 }

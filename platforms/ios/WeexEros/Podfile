@@ -9,10 +9,39 @@ def common
     #Weex debugger 调试工具，只在开发模式集成
     pod 'WXDevtool', '0.15.3', :configurations => ['Debug']
     #Eros iOS 基础库
-    pod 'BMBaseLibrary', :git => 'https://github.com/bmfe/eros-plugin-ios-baseLibrary.git', :tag => '1.3.1'
-
-    #Other Plugins
+    pod 'ErosPluginBaseLibrary', :git => 'https://github.com/bmfe/eros-plugin-ios-baseLibrary.git', :tag => '1.3.1'
     
+    pod 'ErosPluginGeTui', :git => 'https://github.com/bmfe/eros-plugin-ios-getui.git', :tag => '1.0.1'
+    pod 'ErosPluginWXShare', :git => 'https://github.com/bmfe/eros-plugin-ios-wxshare.git', :tag => '1.0.5'
+    pod 'ErosPluginWXPay', :git => 'https://github.com/bmfe/eros-plugin-ios-wxpay.git', :tag => '1.0.2'
+    pod 'ErosPluginAmap', :git => 'https://github.com/bmfe/eros-plugin-ios-amap.git', :tag => '1.0.0'
+    pod 'ErosPluginUMAnalytics', :git => 'https://github.com/bmfe/eros-plugin-ios-UMAnalytics.git', :tag => '1.0.1'
+    
+    #Other Plugins
+    pod 'WeexXLottie', :git => 'https://github.com/wtowto7207/WeexLottie.git', :tag => '1.0.1'
+    #Nat
+    pod 'WeexNatCommunication', :git => 'https://github.com/natjs/weex-nat-communication.git', :tag => '1.0.0'
+    pod 'WeexNatMediaAudio', :git => 'https://github.com/natjs/weex-nat-media-audio.git', :tag => '1.0.0', :branch => 'master'
+    pod 'WeexNatMediaVideo', :git => 'https://github.com/natjs/weex-nat-media-video.git', :tag => '1.0.0'
+    pod 'WeexNatCamera', :git => 'https://github.com/natjs/weex-nat-camera.git', :tag => '1.0.0'
+    pod 'WeexNatRecorder', :git => 'https://github.com/natjs/weex-nat-recorder.git', :tag => '1.0.0'
+    pod 'WeexNatModal', :git => 'https://github.com/natjs/weex-nat-modal.git', :tag => '1.0.1'
+    pod 'WeexNatStream', :git => 'https://github.com/natjs/weex-nat-stream.git', :tag => '1.0.0'
+    pod 'WeexNatTransfer', :git => 'https://github.com/natjs/weex-nat-transfer.git', :tag => '1.0.1'
+    pod 'WeexNatGeolocation', :git => 'https://github.com/natjs/weex-nat-geolocation.git', :tag => '1.0.1'
+    pod 'WeexNatSensorAccelerometer', :git => 'https://github.com/natjs/weex-nat-sensor-accelerometer.git', :tag => '1.0.0'
+    pod 'WeexNatSensorCompass', :git => 'https://github.com/natjs/weex-nat-sensor-compass.git', :tag => '1.0.1'
+    pod 'WeexNatDeviceInfo', :git => 'https://github.com/natjs/weex-nat-device-info.git', :tag => '1.0.0'
+    pod 'WeexNatDeviceNetwork', :git => 'https://github.com/natjs/weex-nat-device-network.git', :tag => '1.0.0'
+    pod 'WeexNatDeviceVibration', :git => 'https://github.com/natjs/weex-nat-device-vibration.git', :tag => '1.0.0'
+    pod 'WeexNatDeviceScreen', :git => 'https://github.com/natjs/weex-nat-device-screen.git', :tag => '1.0.0'
+    pod 'WeexNatDeviceVolume', :git => 'https://github.com/natjs/weex-nat-device-volume.git', :tag => '1.0.0'
+    pod 'WeexNatDeviceBattery', :git => 'https://github.com/natjs/weex-nat-device-battery.git', :tag => '1.0.0'
+    
+    pod 'WeexGcanvas'
+    pod 'WeexPluginLoader'
+    pod 'FGRoute'
+    # pod 'DuoPluginWifiinfo', :path => './duo-plugin-ios-wifiinfo/'
    end
 
 target 'WeexEros' do

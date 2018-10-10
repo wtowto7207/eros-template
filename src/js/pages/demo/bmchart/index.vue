@@ -7,20 +7,22 @@
             :has-top-border="true">
             <switch slot="value" @change="setChartBackground"></switch>
         </wxc-cell>
-        <bmchart scr='bmlocal://assets/chart/bm-chart.html' ref="chart" :options="$format(cycleChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
+        <bmchart ref="chart" :options="$format(cycleChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
         <category title="折线图"></category>
-        <bmchart scr='bmlocal://assets/chart/bm-chart.html' :options="$format(lineChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
+        <bmchart :options="$format(lineChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
         <category title="柱状图"></category>
-        <bmchart scr='bmlocal://assets/chart/bm-chart.html' :options="$format(barChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
+        <bmchart :options="$format(barChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
         <category title="雷达图"></category>
-        <bmchart scr='bmlocal://assets/chart/bm-chart.html' :options="$format(radarChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
+        <bmchart :options="$format(radarChartInfo)" style="width:750; height:520;"  @finish='finish'></bmchart>
+        <category title="热力图"></category>
+        <bmchart ref="chart" :options="$format(heatMap)" style="width:750; height:520;"  @finish='finish'></bmchart>
     </scroller>
 </template>
 <script>
 import { WxcCell, WxcButton } from 'weex-ui'
 import Title from '../_mods/title'
 import Category from '../_mods/category'
-import { cycleChartInfo, lineChartInfo, barChartInfo, radarChartInfo } from './config'
+import { cycleChartInfo, lineChartInfo, barChartInfo, radarChartInfo, heatMap } from './config'
 export default {
     components: { WxcCell, WxcButton, Title, Category }, 
     data () {
@@ -28,7 +30,8 @@ export default {
           cycleChartInfo,
           lineChartInfo,
           barChartInfo,
-          radarChartInfo
+          radarChartInfo,
+          heatMap: heatMap
         }
     },
     methods: {

@@ -1,4 +1,4 @@
-include ':app', ':wxframework' , ':sdk', ':nexus',':ErosPluginAmap',':erosplugingt',':erospluginwxpay',':erospluginumeng'
+include ':app', ':wxframework', ':nataccelerometer', ':natalipay', ':nataudio', ':natbattery', ':natcamera', ':natcommunication', ':natcompass', ':natgeolocation', ':natimage', ':natinfo', ':natmodal', ':natnetwork', ':natrecorder', ':natscreen', ':natstream', ':nattransfer', ':natvibration', ':natvideo', ':natvolume', ':router', ':weexlottie' , ':sdk', ':nexus',':ErosPluginAmap',':erosplugingt',':erospluginum',':erospluginwxpay',':erospluginwxshare'
 
 project(':wxframework').projectDir = new File(settingsDir,'/wxframework/eros-framework')
 project(':sdk').projectDir = new File(settingsDir,'/nexus/sdk')
@@ -6,4 +6,5 @@ project(':nexus').projectDir = new File(settingsDir,'/nexus/nexus')
 project(':ErosPluginAmap').projectDir = new File(settingsDir,'/ErosPluginAmap/ErosPluginAmap')
 project(':erosplugingt').projectDir = new File(settingsDir,'/erosplugingt/erosplugingt')
 project(':erospluginwxpay').projectDir = new File(settingsDir,'/erospluginwxpay/library-wxpay')
-project(':erospluginumeng').projectDir = new File(settingsDir,'/erospluginumeng/library-wxshare')
+project(':erospluginwxshare').projectDir = new File(settingsDir,'/erospluginumeng/library-wxshare')
+project(':erospluginum').projectDir = new File(settingsDir,'/erospluginum')

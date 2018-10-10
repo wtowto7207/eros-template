@@ -11,7 +11,9 @@
   "dependencies": {
     "bui-weex": "^0.2.5",
     "eros-widget": "^1.0.2-beta.2",
-    "weex-ui": "^0.6.0beta-2"
+    "natjs": "^0.1.5",
+    "weex-gcanvas": "^0.5.49",
+    "weex-ui": "^0.6.4"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
