@@ -140,4 +140,6 @@ dependencies {
 //    compile project(':natwechat')
 //    路由器相关
     compile project(':router')
+//    pdf
+    compile project(':pdfviewer')
 }
