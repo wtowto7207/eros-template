@@ -141,5 +141,11 @@ dependencies {
 //    路由器相关
     compile project(':router')
 //    pdf
-    compile project(':pdfviewer')
+//    compile project(':pdfviewer')
+//    gcanvas
+//    compile "com.taobao.gcanvas:corelib:1.0.4"
+//    compile "com.taobao.gcanvas.adapters:img:1.0.0"
+//    compile "com.taobao.gcanvas.bridges:spec:1.0.1"
+//    compile "com.taobao.gcanvas.bridges:weex:1.0.2"
+//    compile "com.taobao.gcanvas.adapters:img_fresco:1.0.1"
 }

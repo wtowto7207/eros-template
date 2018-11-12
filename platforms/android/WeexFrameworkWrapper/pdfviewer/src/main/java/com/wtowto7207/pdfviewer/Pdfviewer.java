@@ -32,8 +32,8 @@ import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
 
-@EActivity(R.layout.activity_main)
-@OptionsMenu(R.menu.options)
+//@EActivity(R.layout.activity_main)
+//@OptionsMenu(R.menu.options)
 public class Pdfviewer extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener,
         OnPageErrorListener {
 
@@ -56,7 +56,7 @@ public class Pdfviewer extends AppCompatActivity implements OnPageChangeListener
 
     String pdfFileName;
 
-    @OptionsItem(R.id.pickFile)
+//    @OptionsItem(R.id.pickFile)
     void pickFile() {
         int permissionCheck = ContextCompat.checkSelfPermission(this,
                 READ_EXTERNAL_STORAGE);
@@ -81,7 +81,7 @@ public class Pdfviewer extends AppCompatActivity implements OnPageChangeListener
             startActivityForResult(intent, REQUEST_CODE);
         } catch (ActivityNotFoundException e) {
             //alert user that file manager not working
-            Toast.makeText(this, R.string.toast_pick_file_error, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, R.string.toast_pick_file_error, Toast.LENGTH_SHORT).show();
         }
     }
 
