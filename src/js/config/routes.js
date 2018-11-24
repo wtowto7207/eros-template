@@ -190,5 +190,11 @@ export default {
     },
     'duo.guide':{
         url: '/pages/demo/duoComponents/guide.js'
+    },
+    'duo.animateList':{
+        url: '/pages/demo/duoComponents/animatePageTwo.js'
+    },
+    'duo.pageDesign':{
+        url: '/pages/demo/duoComponents/pageDesign.js'
     }
 }

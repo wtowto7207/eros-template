@@ -23,7 +23,7 @@
 .status-bar {
   width: 750;
   height: 40;
-  background-color: #1da1f2;
+  background-color: #BBF61E;
 }
 
 .touch-bar {
@@ -41,7 +41,7 @@
 }
 .slider {
   width: 750px;
-  background-color: #1da1f2;
+  background-color: #272E31;
   justify-content: center;
   align-items: center;
 }
@@ -56,11 +56,13 @@
     height: 100px;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom right,#20dc84,#f2d21d);
+    background-color: #BBF61E;
+    /* background-image: linear-gradient(to bottom right,#20dc84,#f2d21d); */
     border-radius: 20px;
 }
 .button:active {
-    background-image: linear-gradient(to bottom right, #099454,#b39a0a);
+    background-color: rgb(130, 172, 16);
+    /* background-image: linear-gradient(to bottom right, #099454,#b39a0a); */
 }
 .button-text {
     color: #ffffff;

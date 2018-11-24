@@ -3,8 +3,7 @@
         <!-- <text>lottie动画</text> -->
         <!-- <text>{{status}}</text>
         <div class="button" @click="lottieAnimation" ></div> -->
-        <!--渐变色背景 http://oxqog7f78.bkt.clouddn.com/json/gradient.json -->
-        <lottie src="http://oxqog7f78.bkt.clouddn.com/json/clock.json" class="lottie" @click="lottieAnimation" loop=true ref="lottie" ></lottie>
+        <lottie src="http://wtowto7207.cn/lottie/finger_print.json" speed="0.5" class="lottie" @click="lottieAnimation" loop=true ref="lottie" ></lottie>
         <div class="content">
             <text>{{lottieJson}}</text>
         </div>

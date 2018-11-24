@@ -1,4 +1,4 @@
-include ':app', ':wxframework', ':nataccelerometer', ':natalipay', ':nataudio', ':natbattery', ':natcamera', ':natcommunication', ':natcompass', ':natgeolocation', ':natimage', ':natinfo', ':natmodal', ':natnetwork', ':natrecorder', ':natscreen', ':natstream', ':nattransfer', ':natvibration', ':natvideo', ':natvolume', ':router', ':weexlottie', ':pdfviewer' , ':sdk', ':nexus',':ErosPluginAmap',':erosplugingt',':erospluginum',':erospluginwxpay',':erospluginwxshare'
+include ':app', ':wxframework', ':nataccelerometer', ':natalipay', ':nataudio', ':natbattery', ':natcamera', ':natcommunication', ':natcompass', ':natgeolocation', ':natimage', ':natinfo', ':natmodal', ':natnetwork', ':natrecorder', ':natscreen', ':natstream', ':nattransfer', ':natvibration', ':natvideo', ':natvolume', ':router', ':weexlottie', ':gcanvasbridge' , ':sdk', ':nexus',':ErosPluginAmap',':erosplugingt',':erospluginum',':erospluginwxpay',':erospluginwxshare'
 
 project(':wxframework').projectDir = new File(settingsDir,'/wxframework/eros-framework')
 project(':sdk').projectDir = new File(settingsDir,'/nexus/sdk')

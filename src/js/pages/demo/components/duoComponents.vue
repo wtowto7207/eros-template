@@ -7,6 +7,18 @@
             :has-top-border="true"
             @wxcCellClicked="jump('guide')">
         </wxc-cell>
+        <wxc-cell title="动效列表"
+            desc="带有滚动动效的列表页"
+            :has-arrow="true"
+            :has-top-border="true"
+            @wxcCellClicked="jump('animateList')">
+        </wxc-cell>
+        <wxc-cell title="样式设计"
+            desc="尝试一些页面设计风格"
+            :has-arrow="true"
+            :has-top-border="true"
+            @wxcCellClicked="jump('pageDesign')">
+        </wxc-cell>
         <!-- <wxc-cell title="富文本"
             desc="bmrichtext."
             :has-arrow="true"
@@ -35,7 +47,8 @@ export default {
     methods: {
         jump(name) {
             this.$router.open({
-                name: `duo.${name}`
+                name: `duo.${name}`,
+                gesBack: false
             })
         },
         showMask () {
