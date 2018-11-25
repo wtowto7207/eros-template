@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-        <div class="card-body" @click="loop">
+        <div class="card-body" @click="move">
             <div class="card-num">
                 <text class="card-num-text text-common">49</text>
                 <div class="card-num-circle">
@@ -31,9 +31,9 @@
         border-bottom-right-radius: 50px;
         background-image: linear-gradient(to bottom, #D1F22E,#00F6A1);
         position: absolute;
-        top: 240px;
-        left: 350px;
-        box-shadow: 0 10px 5px rgb(8, 230, 152);
+        top: 160px;
+        left: 450px;
+        /* box-shadow: 0 10px 5px rgb(8, 230, 152); */
     }
 
     .left-circle {
@@ -66,6 +66,7 @@
 
     .text-common {
         color: #ffffff;
+        font-family: FuturaFuturisC;
     }
 
     .card-num {
@@ -75,7 +76,7 @@
 
     .card-num-text {
         font-size: 150px;
-        line-height: 150px;
+        line-height: 180px;
         font-weight: bold;
     }
 
@@ -90,7 +91,6 @@
         box-shadow: 0 10px 5px rgba(8, 230, 152,0.5);
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
     }
 
     .card-num-inner-circle {
@@ -112,28 +112,29 @@
 
     .card-week {
         font-size: 36px;
-        line-height: 36px;
+        line-height: 42px;
         margin-top: 10px;
     }
 
     .card-day {
         font-size: 32px;
-        line-height: 32px;
+        line-height: 36px;
         font-weight: bold;
         margin-top: 15px;
     }
 
     .card-city {
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         left: 50px;
         font-size: 42px;
-        line-height: 42px;
+        line-height: 48px;
         font-weight: bold;
     }
 </style>
 <script>
 const animation = weex.requireModule('animation');
+const dom = weex.requireModule('dom');
 var move;
 export default {
     data(){
@@ -141,33 +142,34 @@ export default {
             isMove: false
         }
     },
-    mounted(){
-        // setTimeout(this.move(),600);
+    created(){
+        setTimeout(() => {this.move()},500);
+    },
+    beforeCreate(){
+        dom.addRule('fontFace',{
+            'fontFamily': 'FuturaFuturisC',
+            'src': "url('bmlocal://iconfont/FuturaFuturisC.ttf')"
+        })
     },
     methods:{
         move(){
             var vm = this;
             var top = vm.$refs.top;
-            // vm.$notice.toast({
-            //     message: 'dsfs'
-            // })
             if (vm.isMove) {
                 vm.isMove = false;
-                move = -100;
+                move = -30;
             }else {
                 vm.isMove = true;
-                move = 100;
+                move = 30;
             }
             animation.transition(top,{
                 styles: {
                     transform: 'translateX('+ move +'px)'
                 },
                 duration: 1000,
-                timingFunction: 'ease'
+                timingFunction: 'ease-in-out'
             })
-        },
-        loop(){
-            setInterval(this.move(),1000);
+            setTimeout(() => {vm.move()},1100);
         }
     }
 }

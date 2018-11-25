@@ -195,6 +195,18 @@ export default {
         url: '/pages/demo/duoComponents/animatePageTwo.js'
     },
     'duo.pageDesign':{
+        title: 'pageDesign',
         url: '/pages/demo/duoComponents/pageDesign.js'
+    },
+    'duo.pageDesignList':{
+        title: 'pageDesign',
+        url: '/pages/demo/duoComponents/pageDesignList.js'
+    },
+    'duo.pageDesignB':{
+        title: 'pageDesign',
+        url: '/pages/demo/duoComponents/pageDesignB.js'
+    },
+    'duo.pageDesignC':{
+        url: '/pages/demo/duoComponents/pageDesignC.js'
     }
 }

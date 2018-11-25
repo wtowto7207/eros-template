@@ -36,6 +36,9 @@ module.exports = {
         'js/pages/demo/duoComponents/guide.vue',
         'js/pages/demo/duoComponents/animatePageTwo.vue',
         'js/pages/demo/duoComponents/pageDesign.vue',
+        'js/pages/demo/duoComponents/pageDesignList.vue',
+        'js/pages/demo/duoComponents/pageDesignB.vue',
+        'js/pages/demo/duoComponents/pageDesignC.vue',
         //plugin
         'js/pages/demo/plugin/lottie.vue',
         'js/pages/demo/plugin/router.vue',

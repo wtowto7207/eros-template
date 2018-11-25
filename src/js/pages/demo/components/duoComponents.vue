@@ -17,7 +17,7 @@
             desc="尝试一些页面设计风格"
             :has-arrow="true"
             :has-top-border="true"
-            @wxcCellClicked="jump('pageDesign')">
+            @wxcCellClicked="jump('pageDesignList')">
         </wxc-cell>
         <!-- <wxc-cell title="富文本"
             desc="bmrichtext."
